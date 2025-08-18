@@ -1,0 +1,31 @@
+// Coding Solution (41-70)
+// Student Grade Evaluator
+
+import 'dart:io';
+
+/// Student Grade Evaluator
+// Import the necessary library for user input.
+
+void main() {
+  // Prompt the user to enter the student's name (String).
+  print("Enter Student's Name:");
+  String? sName = stdin.readLineSync();
+  print("Your name is: ${sName}");
+
+  // Prompt the user to enter three numeric scores
+  print("Input Assignment Score: ");
+  double? inputAssScore = double.parse(stdin.readLineSync()!);
+  print("The Assignment Score is: ${inputAssScore}");
+
+  print("Input Midterm Score: ");
+  double? inputMidScore = double.parse(stdin.readLineSync()!);
+  print("The Midterm score is: ${inputMidScore}");
+
+  print("Input Final Exam Score: ");
+  double? inputFinalScore = double.parse(stdin.readLineSync()!);
+  print("The 3rd number is: ${inputFinalScore}");
+
+  print("${inputAssScore} / ${inputMidScore} / ${inputFinalScore}");
+  double div = inputAssScore / inputMidScore / inputFinalScore;
+  print("Results: ${div}");
+}
